@@ -54,6 +54,11 @@ ul li {
   border-top: none;
 }
 
+.content-main h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
 .high{
   border-bottom:2px solid red;
 }
