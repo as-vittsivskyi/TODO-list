@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>TODO</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="content-header">
+        <h1>ToDo List</h1>
+
+        <p>Create new topic</p>
+        <form name="topicForm" class="form-topic__dr">
+          <label class="select">
+          <select class="day__select" id="day" name="day">
+            <option value="" disabled selected hidden>Day</option>
+          </select>
+        </label>
+          <input class="time_region" type="time" name="time" placeholder="Time">
+          <label class="select">
+          <select class="term__select" id="color" name="color">
+            <option value="" disabled selected hidden>Priority</option>
+
+            <option value="high">high</option>
+            <option value="average">average</option>
+            <option value="low">low</option>
+          </select>
+        </label>
+
+          <textarea class="text-region" name="topic" id="topic" placeholder="Enter your topic"></textarea>
+          <div>
+            <button class="btn-create" type="submit">Create</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="content-main">
+        <h2>Topics List</h2>
+
+        <div class="table-container">
+          <table id="topic-table">
+            <thead>
+              <tr class="main-topic-line">
+                <th>Status</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Topic</th>
+                <th>Delete topic</th>
+              </tr>
+            </thead>
+            <tbody class="topic-on">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
